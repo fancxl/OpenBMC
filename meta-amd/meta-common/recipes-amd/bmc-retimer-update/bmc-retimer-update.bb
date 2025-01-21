@@ -19,7 +19,7 @@ DEPENDS += " \
 
 RDEPENDS_${PN} += "bash"
 
-SRC_URI="git://git@github.com:/AMDESE/bmc-retimer-update.git;branch=main;protocol=ssh"
+SRC_URI="file:///home/fan/bmc/bmc-retimer-update;branch=main;protocol=ssh"
 SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"

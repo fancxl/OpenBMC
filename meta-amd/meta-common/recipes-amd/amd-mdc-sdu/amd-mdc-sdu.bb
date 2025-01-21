@@ -16,7 +16,7 @@ def get_service(d):
     return "xyz.openbmc_project.Sdu.service"
 
 SYSTEMD_SERVICE_${PN} = "${@get_service(d)}"
-SRC_URI = "git://git@github.com:/AMDESE/bmc-mdc-sdutool.git;branch=main;protocol=ssh"
+SRC_URI = "file:///home/fanbmc/bmc-mdc-sdutool;branch=main;protocol=ssh"
 SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
